@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<VBox xmlns:fx="http://javafx.com/fxml/1" alignment="CENTER" maxHeight="1.7976931348623157E308"
+      maxWidth="1.7976931348623157E308" prefHeight="481.0" prefWidth="654.0" spacing="20.0"
+      stylesheets="@app_theme.css" xmlns="http://javafx.com/javafx/11.0.1"
+      fx:controller="application.controllers.LoginSceneController">
+    <padding>
+        <Insets bottom="40.0" left="65.0" right="20.0" top="50.0"/>
+    </padding>
+    <children>
+        <AnchorPane id="anchor" blendMode="SRC_ATOP" prefHeight="449.0" prefWidth="565.0"
+                    stylesheets="@app_theme.css">
+            <children>
+                <TextField fx:id="netId" layoutX="159.0" layoutY="153.0"
+                           onKeyPressed="#onKeyPressed" prefHeight="30.0" prefWidth="218.0"
+                           promptText="NetID" styleClass="text-field" stylesheets="@app_theme.css"/>
+                <PasswordField fx:id="passwordField" layoutX="158.0" layoutY="192.0"
+                               onKeyPressed="#onKeyPressed" prefHeight="30.0" prefWidth="219.0"
+                               promptText="Password" styleClass="text-field"
+                               stylesheets="@app_theme.css"/>
+                <Button id="login" layoutX="156.0" layoutY="250.0" mnemonicParsing="false"
+                        onAction="#login" prefHeight="58.0" prefWidth="217.0" text="Login"
+                        textFill="#d633ff">
+                    <font>
+                        <Font size="14.0" fx:id="x1"/>
+                    </font>
+                </Button>
+                <ImageView fitHeight="176.0" fitWidth="276.8075117370892" layoutX="136.0"
+                           layoutY="-19.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="/images/TUDELFTlogo.png"/>
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="30.0" fitWidth="28.0" layoutX="121.0" layoutY="192.0"
+                           preserveRatio="true">
+                    <image>
+                        <Image url="/images/icons8-password-96.png"/>
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="28.0" fitWidth="30.0" layoutX="121.0" layoutY="153.0"
+                           preserveRatio="true">
+                    <image>
+                        <Image url="/images/icons8-user-96.png"/>
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+        <AnchorPane blendMode="SRC_ATOP" prefHeight="77.0" prefWidth="441.0"
+                    stylesheets="@app_theme.css">
+            <children>
+                <Label font="$x1" layoutX="122.0" layoutY="-4.0" prefHeight="45.0" prefWidth="277.0"
+                       text="If you don't have an account yet press"/>
+                <Hyperlink font="$x1" layoutX="357.0" layoutY="5.0" onAction="#register"
+                           text="here."/>
+                <Hyperlink font="$x1" layoutX="383.0" layoutY="29.0" prefHeight="28.0"
+                           prefWidth="49.0" onAction="#forgotPassword" text="here."/>
+                <Label font="$x1" layoutX="122.0" layoutY="33.0"
+                       text="If you have forgotten your password press"/>
+            </children>
+        </AnchorPane>
+
+    </children>
+</VBox>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="481.0" prefWidth="654.0" stylesheets="app_theme.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controllers.OrderFoodSceneController">
+    <children>
+        <AnchorPane fx:id="drawerPane" layoutY="4.0" prefHeight="430.0" prefWidth="181.0">
+            <children>
+                <JFXDrawer fx:id="drawer" defaultDrawerSize="186.0" layoutY="70.0" prefHeight="396.0" prefWidth="186.0" />
+            </children>
+        </AnchorPane>
+        <Button fx:id="orderFood" layoutX="47.0" layoutY="323.0" mnemonicParsing="false" onAction="#orderFood" prefHeight="46.0" prefWidth="241.0" text="Order Here" />
+        <TableView fx:id="menus" layoutX="47.0" layoutY="28.0" prefHeight="200.0" prefWidth="475.0">
+            <columns>
+                <TableColumn fx:id="name" prefWidth="70.0" text="Name" />
+                <TableColumn fx:id="description" prefWidth="333.0" text="Description" />
+                <TableColumn fx:id="price" prefWidth="71.0" text="Price (€)" />
+            </columns>
+        </TableView>
+        <Button fx:id="orderAtOther" layoutX="337.0" layoutY="323.0" mnemonicParsing="false" onAction="#backButton" prefHeight="46.0" prefWidth="222.0" text="Back" />
+        <Button fx:id="addToCart" layoutX="337.0" layoutY="270.0" mnemonicParsing="false" onAction="#addToCart" prefHeight="46.0" prefWidth="222.0" text="Add to cart" />
+        <Button fx:id="toggleBasket" layoutX="167.0" layoutY="270.0" mnemonicParsing="false" onAction="#toggleBasket" prefHeight="46.0" prefWidth="120.0" text="Toggle basket" />
+        <Button fx:id="clearBasket" layoutX="47.0" layoutY="270.0" mnemonicParsing="false" onAction="#clearBasket" prefHeight="46.0" prefWidth="120.0" text="Clear Basket" />
+      <Text fx:id="informationText" layoutX="47.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please Choose a restaurant to order from" wrappingWidth="474.9999940395355">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <TableView fx:id="restaurants" layoutX="46.0" layoutY="28.0" prefHeight="200.0" prefWidth="514.0">
+        <columns>
+          <TableColumn fx:id="restaurantName" prefWidth="122.0" text="Name" />
+          <TableColumn fx:id="restaurantLocation" prefWidth="131.0" text="Location" />
+            <TableColumn fx:id="openingTime" prefWidth="129.0" text="Opening time" />
+            <TableColumn fx:id="closingTime" prefWidth="131.0" text="Closing Time" />
+        </columns>
+      </TableView>
+          <JFXHamburger fx:id="ham" layoutX="4.0" layoutY="2.0" />
+    </children>
+</AnchorPane>

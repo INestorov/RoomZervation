@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="481.0" prefWidth="654.0" stylesheets="@app_theme.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.views.PreloaderView">
+    <children>
+        <Label layoutX="233.0" layoutY="184.0" prefHeight="67.0" prefWidth="255.0" style="-fx-font-size: 40; -fx-text-fill: #37c7ef;" text="WELCOME" />
+        <ProgressBar fx:id="progressBar" layoutX="212.0" layoutY="252.0" prefHeight="21.0" prefWidth="230.0" progress="0" stylesheets="@app_theme.css" />
+    </children>
+</AnchorPane>

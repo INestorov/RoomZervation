@@ -1,0 +1,65 @@
+.jfx-drawer-overlay-pane {
+    -fx-background-color: RGBA(0, 166, 214, 0.3);
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+}
+
+.jfx-drawer-side-pane {
+    -fx-background-color: transparent;
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+}
+
+.root {
+    -fx-background-color: #FFFFFF;
+    -fx-background-image: url("images/Untitled-2.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+}
+
+.button {
+    -fx-background-color: #37c7ef;
+    -fx-text-fill: black;
+    -fx-font-size: 15px;
+}
+#buildingButton{
+    -fx-padding: 15px;
+}
+#roomButton{
+    -fx-padding: 15px;
+}
+.button:hover{
+    -fx-background-color: #00A6D6;
+}
+#adminPage{
+    -fx-text-fill: RGB(0, 166, 214);
+    -fx-font-size: 30px;
+}
+#buildOrRoom{
+    -fx-text-fill: RGB(0, 166, 214);
+    -fx-font-size: 30px;
+}
+#cancelRes{
+    -fx-text-fill: RGB(0, 166, 214);
+    -fx-font-size: 30px;
+}
+#authorise{
+    -fx-text-fill: RGB(0, 166, 214);
+    -fx-font-size: 30px;
+}
+#remUser{
+    -fx-text-fill: RGB(0, 166, 214);
+    -fx-font-size: 30px;
+}
+.label{
+    -fx-text-fill: RGB(0, 166, 214);
+    -fx-font-size: 15px;
+}
+#roomServation{
+    -fx-font-size: 45px;
+    -fx-text-fill: RGBA(0, 166, 214, 0.6);
+}
+#information{
+    -fx-font-size: 30px;
+    -fx-text-fill: RGB(0, 166, 214)
+}

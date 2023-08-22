@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="497.0" prefWidth="652.0" stylesheets="@app_theme.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controllers.RegistrationController">
+  <ImageView blendMode="SRC_ATOP" fitHeight="171.0" fitWidth="274.0" layoutX="198.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@images/TUDELFTlogo.png" />
+      </image></ImageView>
+  <TextField fx:id="id" layoutX="220.0" layoutY="167.0" onKeyPressed="#onKeyPressed" prefHeight="26.0" prefWidth="210.0" promptText="Student/Teacher number" />
+  <TextField fx:id="username" layoutX="221.0" layoutY="193.0" onKeyPressed="#onKeyPressed" prefHeight="26.0" prefWidth="210.0" promptText="NetID" />
+  <TextField fx:id="mail" layoutX="220.0" layoutY="219.0" onKeyPressed="#onKeyPressed" prefWidth="210.0" promptText="Student email" text="" />
+  <TextField id="phoneNumber" fx:id="phone" layoutX="220.0" layoutY="245.0" onKeyPressed="#onKeyPressed" prefWidth="210.0" promptText="Phone number" text="" />
+  <PasswordField fx:id="password" layoutX="220.0" layoutY="271.0" onKeyPressed="#onKeyPressed" prefHeight="26.0" prefWidth="210.0" promptText="Password" />
+  <PasswordField fx:id="passwordConfirm" layoutX="220.0" layoutY="297.0" onKeyPressed="#onKeyPressed" prefHeight="26.0" prefWidth="210.0" promptText="Confirm Password" />
+  <Button fx:id="button" cancelButton="false" defaultButton="false" disable="true" layoutX="219.0" layoutY="355.0" mnemonicParsing="false" onAction="#onAction" opacity="0.5" prefHeight="52.0" prefWidth="212.0" text="Register" textOverrun="ELLIPSIS" underline="false">
+    <font>
+      <Font size="18.0" fx:id="x1" />
+    </font>
+  </Button>
+  <Button font="$x1" layoutX="220.0" layoutY="418.0" mnemonicParsing="false" onAction="#goBack" prefHeight="52.0" prefWidth="212.0" styleClass="button-back" text="Back" />
+</AnchorPane>

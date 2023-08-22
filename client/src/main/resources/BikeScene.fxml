@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="481.0" prefWidth="654.0" stylesheets="app_theme.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controllers.BikeSceneController">
+    <children>
+        <AnchorPane layoutY="4.0" prefHeight="430.0" prefWidth="181.0">
+            <children>
+                <AnchorPane fx:id="drawerPane" layoutY="43.0" prefHeight="430.0" prefWidth="181.0">
+                    <children>
+                        <JFXDrawer fx:id="drawer" defaultDrawerSize="186.0" layoutY="-13.0" prefHeight="396.0" prefWidth="186.0" />
+                    </children>
+                </AnchorPane>
+                  <TableView fx:id="buildings" layoutX="8.0" layoutY="27.0" prefHeight="253.0" prefWidth="584.0">
+                      <columns>
+                          <TableColumn fx:id="buildingNames" prefWidth="236.0" text="Bulding" />
+                          <TableColumn fx:id="nbikes" prefWidth="121.0" text="Available bikes" />
+                          <TableColumn fx:id="openingTime" prefWidth="110.0" text="Opening time" />
+                          <TableColumn fx:id="closingTime" prefWidth="115.0" text="Closing Time" />
+                      </columns>
+                  </TableView>
+                <Button fx:id="rentBike" layoutX="424.0" layoutY="299.0" mnemonicParsing="false" onAction="#rentBike" prefHeight="54.0" prefWidth="170.0" text="Rent Bike" />
+                <Button layoutX="424.0" layoutY="376.0" mnemonicParsing="false" onAction="#backButton" prefHeight="54.0" prefWidth="170.0" text="Back to main menu" />
+            <Button fx:id="rentNow" layoutX="237.0" layoutY="376.0" mnemonicParsing="false" onAction="#pickUpNow" prefHeight="54.0" prefWidth="170.0" text="" textAlignment="CENTER" />
+            <Text fx:id="chooseBuildingText" layoutX="74.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please select the building where you will pick up the bike">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+                  <JFXHamburger fx:id="ham" layoutX="3.0" layoutY="2.0" />
+            <Text fx:id="selectTimeText" layoutX="17.0" layoutY="332.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You will pick up the bike at:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="hours" layoutX="248.0" layoutY="311.0" prefHeight="31.0" prefWidth="52.0" />
+            <TextField fx:id="minutes" layoutX="348.0" layoutY="311.0" prefHeight="31.0" prefWidth="52.0" />
+            <Text fx:id="points" layoutX="320.0" layoutY="333.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            </children>
+        </AnchorPane>
+        <AnchorPane prefHeight="408.0" prefWidth="251.0" />
+    </children>
+</VBox>

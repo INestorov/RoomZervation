@@ -1,0 +1,106 @@
+
+.root {
+    -fx-background-color: #FFFFFF;
+    -fx-background-image: url("/images/Untitled-2.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+}
+
+
+
+.text-field {
+    -fx-text-fill: black;
+    -fx-border-color: black;
+    -fx-border-width: 0 0 1 0;
+    -fx-background-color: transparent;
+    -fx-prompt-text-fill: gray;
+}
+
+.button {
+    -fx-background-color: #37c7ef;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-border-radius: 0px;
+}
+
+.button:hover{
+    -fx-background-color: #00A6D6;
+}
+
+.button-back {
+    -fx-background-color: white;
+    -fx-border-color: #37c7ef;
+    -fx-text-fill: #37c7ef;
+    -fx-font-size: 14px;
+    -fx-border-radius: 0px;
+}
+
+.button-back:hover {
+    -fx-background-color: #37c7ef;
+    -fx-text-fill: white;
+}
+.table-view{
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header-background .label{
+    -fx-background-color: RGB(0, 166, 214);
+    -fx-text-fill: white;
+}
+.table-view .column-header {
+    -fx-background-color: RGB(0, 166, 214);
+    -fx-border-color: white;
+}
+
+.table-view > .virtual-flow > .scroll-bar:vertical,
+.table-view > .virtual-flow > .scroll-bar:vertical > .track,
+.table-view > .virtual-flow > .scroll-bar:vertical > .track-background,
+.table-view > .virtual-flow > .scroll-bar:horizontal,
+.table-view > .virtual-flow > .scroll-bar:horizontal > .track,
+.table-view > .virtual-flow > .scroll-bar:horizontal > .track-background {
+    -fx-background-color: transparent;
+}
+
+.table-row-cell:odd:selected {
+    -fx-table-cell-border-color: transparent;
+    -fx-background-color: red;
+}
+
+.table-row-cell:even:selected {
+    -fx-table-cell-border-color: transparent;
+    -fx-background-color: red;
+}
+
+.table-view > .virtual-flow > .scroll-bar > .increment-button,
+.table-view > .virtual-flow > .scroll-bar > .decrement-button {
+    -fx-opacity: 0;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: -fx-table-cell-border-color, RGB(0, 166, 214);
+}
+
+#reserve {
+    -fx-text-fill: RGB(0, 166, 214);
+    -fx-font-size: 15;
+}
+
+.
+/*.progress-bar {*/
+/*    -fx-background-color: white;*/
+/*    -fx-background-radius: 10, 10, 10, 10;*/
+
+/*}*/
+
+/*.progress-bar .track{*/
+/*    -fx-background-color: black;*/
+/*    -fx-background-insets: 20;*/
+/*    -fx-background-radius: 6, 6, 6, 6;*/
+/*}*/
+
+/*.progress-bar .bar {*/
+/*    -fx-background-color: black;*/
+/*    -fx-background-insets: 30, 30, 30, 30;*/
+/*    -fx-background-radius: 4, 4, 4, 4;*/
+/*}*/
+

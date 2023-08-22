@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="app_theme.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controllers.ReservationListSceneController">
+  <Label alignment="CENTER" layoutY="1.0" prefWidth="600.0" text="Your reservations. Select a reservation for more actions" />
+  <AnchorPane fx:id="drawerPane" layoutY="34.0" prefHeight="436.0" prefWidth="186.0">
+    <children>
+      <JFXDrawer fx:id="drawer" defaultDrawerSize="186.0" layoutY="23.0" prefHeight="396.0" prefWidth="186.0" />
+    </children>
+  </AnchorPane>
+  <TableView fx:id="myRoomsTable" layoutX="1.0" layoutY="32.0" prefHeight="226.0" prefWidth="372.0">
+    <columns>
+      <TableColumn fx:id="name" maxWidth="314.0" minWidth="10.0" prefWidth="132.0" text="room_name" />
+      <TableColumn id="buildingName" fx:id="date" maxWidth="314.0" minWidth="10.0" prefWidth="119.0" text="Date" />
+      <TableColumn fx:id="interval" maxWidth="314.0" minWidth="10.0" prefWidth="119.0" text="Interval" />
+    </columns>
+  </TableView>
+  <Label fx:id="label" alignment="CENTER" layoutX="372.0" layoutY="27.0" prefHeight="26.0" prefWidth="119.0" text="More details" visible="false" />
+  <GridPane fx:id="gridPane" gridLinesVisible="false" layoutX="372.0" layoutY="53.0" prefHeight="200.0" prefWidth="218.0">
+    <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="111.0" minWidth="10.0" prefWidth="111.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="107.0" minWidth="10.0" prefWidth="107.0" />
+    </columnConstraints>
+    <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+  </GridPane>
+  <Button layoutX="467.0" layoutY="265.0" mnemonicParsing="false" onAction="#cancelReservationButton" prefHeight="39.0" prefWidth="97.0" text="Cancel reservation" />
+  <Button layoutX="181.0" layoutY="357.0" mnemonicParsing="false" onAction="#backButton" prefHeight="41.0" prefWidth="170.0" text="Back to main menu" />
+  <Button layoutX="467.0" layoutY="331.0" mnemonicParsing="false" onAction="#goToRoomList" prefHeight="39.0" prefWidth="107.0" text="New Reservation" />
+  <Button fx:id="foodButton" layoutX="21.0" layoutY="289.0" mnemonicParsing="false" onAction="#orderFood" prefHeight="39.0" prefWidth="170.0" text="Order food here" />
+<JFXHamburger fx:id="ham" layoutX="4.0" layoutY="4.0" />
+</AnchorPane>
